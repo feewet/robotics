@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+// prototypes
+void getStats(float& strength, float& agility, int& luck);
+float calculateAwesomenessLevel(float strength, float agility, int luck, float& awesome);
+void displayLevel(float& strength, float& agility, int& luck, float& awesome);
+
+void main(void)
+{
+	float str, agi, awe;
+	int lucky;
+	Getstats(float strength, float agility, int luck);
+	CalculateAwesomenessLevel(str, agi/2, lucky*2, awe);
+	DisplayLevel(str, agi, luck, awe);
+	return 0;
+}
+
+void GetStats(float strength, float agility, int luck)
+{
+	cout << "Enter strength, agility and luck: ";
+	cin >> strength >> agility >> luck;
+}
+
+float CalculateAwesomenessLevel(float strength, float agility, int luck, float& awesome)
+{
+	awesome = (strength * pow(luck, 2+agility));
+}
+
+void DisplayLevel(float& strength, float& agility, int& luck, float& awesome)
+{
+	cout << endl << "The awesome level is: " << awe << endl;
+}
